@@ -30,8 +30,8 @@ function App() {
 		</div>
 		<img src="src/assets/imagenes/men.png" className="men" />
 	</section>
-	<Servicios />
 	<InfoContacto />
+	<Servicios />
 	<Testimonios />
 
     </>
