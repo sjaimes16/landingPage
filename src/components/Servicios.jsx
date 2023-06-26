@@ -1,38 +1,25 @@
 import React from 'react'
 import './Servicios.css'
 
-const Servicios = () => {
-  return (
-    <>
-    <section id="services">
+const Servicios = ({ servicios }) => {
+	return (
+	  <section id="services">
 		<div className="secText">
-			<h2>What I Am Great At</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet esse ullam nobis, suscipit harum laudantium voluptate laborum aspernatur perferendis at officia reprehenderit facere cum!</p>
+		  <h2>Servicios</h2>
 		</div>
-		<div className="content">
+		{servicios.map((servicio, index) => (
+		  <div className="contentServices" key={index}>
 			<div className="servicesBx">
-				<img src="src/assets/imagenes/icon1.png" alt=""/>
-				<h3>Web Designing</h3>
+			  <img src={servicio.imagenes} alt="" />
+			  <h3>{servicio.description}</h3>
 			</div>
-			<div className="servicesBx">
-				<img src="src/assets/imagenes/icon2.png" alt="" />
-				<h3>Web Development</h3>
-			</div>
-			<div className="servicesBx">
-				<img src="src/assets/imagenes/icon3.png" alt="" />
-				<h3>Android Apps</h3>
-			</div>
-			<div className="servicesBx">
-				<img src="src/assets/imagenes/icon4.png" alt="" />
-				<h3>Video Editing</h3>
-			</div>
-		</div>
+		  </div>
+		))}
 		<div className="center">
-			<a href="#" className="btn">Hire Me</a>
+		  <a href="#" className="btn">Hire Me</a>
 		</div>
-	</section>
-    </>
-  )
-}
+	  </section>
+	);
+  };
 
 export default Servicios

@@ -1,34 +1,27 @@
 import React from 'react'
-import './Testimonios.css'
+// import './Testimonios.css'
 
-const Testimonios = () => {
+const Testimonios = ({testimonios}) => {
   return (
     <>
-        <section id="contact">
+	<section id="contact">
 		<div className="secText">
-			<h2>Ways To Contact Me</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet esse ullam nobis, suscipit harum laudantium voluptate laborum aspernatur perferendis at officia reprehenderit facere cum!</p>
+		  <h2>Testimonios</h2>
 		</div>
-		<div className="content">
+		{testimonios.map((testimonio, index) => (
+		  <div className="content" key={index}>
 			<a href="#">
-				<ion-icon name="mail-outline"></ion-icon> dummy@email.name
+				<ion-icon name="mail-outline"></ion-icon> 
+				{testimonio.description}
 			</a>
-			<a href="#">
-				<ion-icon name="call-outline"></ion-icon> +123 000 000 0000
-			</a>
-		
-			<a href="#">
-				<ion-icon name="logo-skype"></ion-icon> skype
-			</a>
-		
-			<a href="#">
+		  </div>
+		))}
+		<div className="contentButton">
+			<a href="https://api.whatsapp.com/send?phone=3227536718&text=Hola" target="_blank">
 				<ion-icon name="logo-whatsapp"></ion-icon> whatsapp
 			</a>
 		</div>
-		<div className="center">
-			<p className="copyrights">Copyright © 2021 <a href="#">Online Tutorials</a>. All Right Reserved.</p>
-		</div>
-	</section>
+	  </section>
     </>
   )
 }
