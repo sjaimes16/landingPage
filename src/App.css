@@ -169,8 +169,8 @@ header ul li:hover a
 	flex-direction: column;
 	border: 2px solid #2e2f34;
 	gap: 20px;
-	width: 1250px;
-	margin-left: 25%;
+	/* width: 1250px;
+	margin-left: 25%; */
 }
 #services .contentServices .servicesBx:hover 
 {

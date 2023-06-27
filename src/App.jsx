@@ -8,14 +8,17 @@ function App() {
 		{
 		  imagenes: 'src/assets/img1.jpg',
 		  profesion: 'Doctor',
+		  name: 'Daniela'
 		},
 		{
 		  imagenes: 'src/assets/img2.jpg',
 		  profesion: 'Cirujano',
+		  name: 'William'
 		},
 		{
 		  imagenes: 'src/assets/img3.jpg',
 		  profesion: 'Enfermera',
+		  name: 'Valentina'
 		},
 	];
 

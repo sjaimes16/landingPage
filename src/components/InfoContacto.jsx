@@ -8,7 +8,7 @@ const InfoContacto = ({ contacto }) => (
         <b></b>
         <img src={img.imagenes} />
         <div className="content2">
-          <h2 className='h2Prueba'>{img.profesion}<br /><span>Creative Designer</span></h2>
+          <h2 className='h2Prueba'>{img.profesion}<br /><span>{img.name}</span></h2>
           <ul className="sci">
             <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
